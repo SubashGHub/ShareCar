@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.ResourceBundle;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -17,21 +18,24 @@ import org.testng.annotations.BeforeClass;
 public class BaseClass {
 	
 	public static WebDriver driver;
+	ResourceBundle bundle;
+	
 	
 	@BeforeClass
-	public void openApp() {
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-		driver.get("https://products.ncryptedprojects.com/sharecaar/login");
+	public void setUp() {
+		driver=new ChromeDriver();
+		bundle = ResourceBundle.getBundle("config");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.get(bundle.getString("url"));
 		driver.manage().window().maximize();
 	}
 	
 	@AfterClass
-	public void close() {
+	public void tearDown() {
 		driver.close();
 	}
 	
-	
+		
 	public String captureScreen(String TCname) {
 		
 		TakesScreenshot ts = (TakesScreenshot) driver;
@@ -40,12 +44,14 @@ public class BaseClass {
 		
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		
-		String target=(System.getProperty("user.dir")+"\\Screenshot\\"+TCname+"_"+timeStamp+".png");
+		String target=(System.getProperty("user.dir")+"/Screenshot/"+TCname+"_"+timeStamp+".png");
+		
 		try {
 			FileUtils.copyFile(src, new File(target));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 		return target;
 	}
 

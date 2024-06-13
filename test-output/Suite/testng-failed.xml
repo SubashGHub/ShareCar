@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite data-provider-thread-count="3" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
-    <listener class-name="utility.ReportGenerate"/>
+    <listener class-name="utility.ExtentReport"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testcases.OfferRideTC1">
+      <class name="testcases.OfferRideTC2">
         <methods>
-          <include name="LoginTest"/>
-          <include name="offerRideTest"/>
-          <include name="openApp"/>
-          <include name="close"/>
+          <include name="loginTest"/>
+          <include name="offerRide1Test"/>
+          <include name="tearDown"/>
+          <include name="offerRide2Test" invocation-numbers="0"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- testcases.OfferRideTC1 -->
+      </class> <!-- testcases.OfferRideTC2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

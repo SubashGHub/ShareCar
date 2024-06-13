@@ -5,18 +5,12 @@
     <classes>
       <class name="testcases.OfferRideTC1">
         <methods>
-          <include name="offerRideTest" invocation-numbers="0"/>
-          <include name="openApp"/>
-          <include name="close"/>
+          <include name="loginTest"/>
+          <include name="offerRide1Test"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- testcases.OfferRideTC1 -->
-      <class name="testcases.LoginTC">
-        <methods>
-          <include name="LoginTest"/>
-          <include name="openApp"/>
-          <include name="close"/>
-        </methods>
-      </class> <!-- testcases.LoginTC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

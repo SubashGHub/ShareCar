@@ -1,4 +1,4 @@
-package pom;
+package pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,13 +11,13 @@ public class OfferRide1_pom extends Base{
 	}
 	
 	@FindBy(xpath="//a[@title='Offer Ride']")
-	WebElement offerride;
+	WebElement btnOfferride;
 	
 	@FindBy(id="from_location")
-	WebElement fromlocation;
+	WebElement txtFromlocation;
 	
 	@FindBy(id="to_location")
-	WebElement tolocation;
+	WebElement txtTolocation;
 	
 	@FindBy(id="pickup_point_2")
 	WebElement pickuppoint;
@@ -39,11 +39,11 @@ public class OfferRide1_pom extends Base{
 	
 	
 	public void setFromLocation(String from) {
-		fromlocation.sendKeys(from);
+		txtFromlocation.sendKeys(from);
 	}
 	
 	public void setToLocation(String to) {
-		tolocation.sendKeys(to);
+		txtTolocation.sendKeys(to);
 	}
 	
 	public void setPickupPoint(String pick) {

@@ -4,28 +4,30 @@ package testcases;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import pom.FindARide_pom;
-import pom.Profile_pom;
+import pageObjects.Base;
+import pageObjects.FindARide_pom;
+import pageObjects.Profile_pom;
+import utility.ExtentReport;
 
 public class FindARideTC extends LoginTC{
 	
 	@Test(dependsOnMethods = "loginTest", dataProvider = "rideData")
-	public void findRideTest(String from, String to, String date) {
-		FindARide_pom fd = new FindARide_pom(driver);
-		Profile_pom h = new Profile_pom(driver);
+	public void findRideTest(String from, String to, String date, String radius) {
+		FindARide_pom fd = new FindARide_pom(Base.driver);
 		
-		h.clickFindride();
+		new Profile_pom(driver).clickFindride();
+		
 		fd.setFromLocation(from);
 		fd.setToLocation(to);
-		fd.selectExtendRadius();
+		fd.selectExtendRadius(radius);
 		fd.setJourneyDate(date);
-		fd.searchRide();
-		
+		fd.clickSearchRide();
+		ExtentReport.test.pass("Search ride button clicked");
 	}
 	
 	@DataProvider
 	String[][] rideData() {
-		String arr [][] = {{"Chennai","Bengaluru","08/06/2024"}};
+		String arr [][] = {{"Chennai","Bengaluru","23-08-2024","20"}};
 		return arr;
 	}
 }

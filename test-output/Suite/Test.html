@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 31 13:55:43 IST 2024</td>
+<td>Started on:</td><td>Thu Jun 13 06:52:06 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>89 seconds (89500 ms)</td>
+<tr><td>Total time:</td><td>111 seconds (111770 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,54 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.OfferRideTC2.offerRide2Test()'><b>offerRide2Test</b><br>Test class: testcases.OfferRideTC2<br>Parameters: [Ljava.lang.String;@6b16de91</td>
+<td><div><pre>java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at testcases.OfferRideTC2.offerRide2Test(OfferRideTC2.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace347239869", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace347239869'><pre>java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at testcases.OfferRideTC2.offerRide2Test(OfferRideTC2.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>5</td>
+<td>testcases.OfferRideTC2@233795b6</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,45 +124,40 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='testcases.FindARideTC.findRideTest()'><b>findRideTest</b><br>Test class: testcases.FindARideTC<br>Parameters: Chennai, Bengaluru, 23-08-2024, 20</td>
+<td></td>
+<td>8</td>
+<td>testcases.FindARideTC@77c2494c</td></tr>
+<tr>
 <td title='testcases.OfferRideTC1.loginTest()'><b>loginTest</b><br>Test class: testcases.OfferRideTC1<br>Parameters: niteesh@w3softech.com, w3softech</td>
 <td></td>
-<td>3</td>
-<td>testcases.OfferRideTC1@185a6e9</td></tr>
-<tr>
-<td title='testcases.OfferRideTC1.offerRide1Test()'><b>offerRide1Test</b><br>Test class: testcases.OfferRideTC1<br>Parameters: Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30</td>
-<td></td>
 <td>4</td>
-<td>testcases.OfferRideTC1@185a6e9</td></tr>
+<td>testcases.OfferRideTC1@f5958c9</td></tr>
+<tr>
+<td title='testcases.OfferRideTC1.offerRide1Test()'><b>offerRide1Test</b><br>Test class: testcases.OfferRideTC1<br>Parameters: [Ljava.lang.String;@71bb8b34</td>
+<td></td>
+<td>5</td>
+<td>testcases.OfferRideTC1@f5958c9</td></tr>
+<tr>
+<td title='testcases.LoginTC.loginTest()'><b>loginTest</b><br>Test class: testcases.LoginTC<br>Parameters: niteesh@w3softech.com, w3softech</td>
+<td></td>
+<td>5</td>
+<td>testcases.LoginTC@385c9627</td></tr>
 <tr>
 <td title='testcases.OfferRideTC2.loginTest()'><b>loginTest</b><br>Test class: testcases.OfferRideTC2<br>Parameters: niteesh@w3softech.com, w3softech</td>
 <td></td>
 <td>3</td>
-<td>testcases.OfferRideTC2@6f03482</td></tr>
-<tr>
-<td title='testcases.OfferRideTC2.offerRide2Test()'><b>offerRide2Test</b><br>Test class: testcases.OfferRideTC2<br>Parameters: 1320, 23/08/2024, 5:40, 1234, 1220, 2589, 23/08/2024, 8:10, 230, 1112</td>
-<td></td>
-<td>8</td>
-<td>testcases.OfferRideTC2@6f03482</td></tr>
-<tr>
-<td title='testcases.OfferRideTC2.offerRide1Test()'><b>offerRide1Test</b><br>Test class: testcases.OfferRideTC2<br>Parameters: Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30</td>
-<td></td>
-<td>3</td>
-<td>testcases.OfferRideTC2@6f03482</td></tr>
-<tr>
-<td title='testcases.LoginTC.loginTest()'><b>loginTest</b><br>Test class: testcases.LoginTC<br>Parameters: niteesh@w3softech.com, w3softech</td>
-<td></td>
-<td>4</td>
-<td>testcases.LoginTC@229f66ed</td></tr>
-<tr>
-<td title='testcases.FindARideTC.findRideTest()'><b>findRideTest</b><br>Test class: testcases.FindARideTC<br>Parameters: Chennai, Bengaluru, 08/06/2024</td>
-<td></td>
-<td>4</td>
-<td>testcases.FindARideTC@1e800aaa</td></tr>
+<td>testcases.OfferRideTC2@233795b6</td></tr>
 <tr>
 <td title='testcases.FindARideTC.loginTest()'><b>loginTest</b><br>Test class: testcases.FindARideTC<br>Parameters: niteesh@w3softech.com, w3softech</td>
 <td></td>
+<td>4</td>
+<td>testcases.FindARideTC@77c2494c</td></tr>
+<tr>
+<td title='testcases.OfferRideTC2.offerRide1Test()'><b>offerRide1Test</b><br>Test class: testcases.OfferRideTC2<br>Parameters: [Ljava.lang.String;@197ce367</td>
+<td></td>
 <td>3</td>
-<td>testcases.FindARideTC@1e800aaa</td></tr>
+<td>testcases.OfferRideTC2@233795b6</td></tr>
 </table><p>
 </body>
 </html>

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.OfferRideTC2" class="method navigator-link" hash-for-method="offerRide2Test([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30])">offerRide2Test([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +117,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.FindARideTC" class="method navigator-link" hash-for-method="findRideTest(Chennai, Bengaluru, 08/06/2024)">findRideTest(Chennai, Bengaluru, 08/06/2024)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.FindARideTC" class="method navigator-link" hash-for-method="findRideTest(Chennai, Bengaluru, 23-08-2024, 20)">findRideTest(Chennai, Bengaluru, 23-08-2024, 20)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -113,12 +127,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.OfferRideTC2" class="method navigator-link" hash-for-method="loginTest(niteesh@w3softech.com, w3softech)">loginTest(niteesh@w3softech.com, w3softech)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.LoginTC" class="method navigator-link" hash-for-method="loginTest(niteesh@w3softech.com, w3softech)">loginTest(niteesh@w3softech.com, w3softech)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.LoginTC" class="method navigator-link" hash-for-method="loginTest(niteesh@w3softech.com, w3softech)">loginTest(niteesh@w3softech.com, w3softech)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.OfferRideTC2" class="method navigator-link" hash-for-method="loginTest(niteesh@w3softech.com, w3softech)">loginTest(niteesh@w3softech.com, w3softech)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -128,17 +142,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.OfferRideTC1" class="method navigator-link" hash-for-method="offerRide1Test(Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30)">offerRide1Test(Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.OfferRideTC1" class="method navigator-link" hash-for-method="offerRide1Test([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30])">offerRide1Test([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30])</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.OfferRideTC2" class="method navigator-link" hash-for-method="offerRide1Test(Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30)">offerRide1Test(Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.OfferRideTC2" class="method navigator-link" hash-for-method="offerRide2Test(1320, 23/08/2024, 5:40, 1234, 1220, 2589, 23/08/2024, 8:10, 230, 1112)">offerRide2Test(1320, 23/08/2024, 5:40, 1234, 1220, 2589, 23/08/2024, 8:10, 230, 1112)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.OfferRideTC2" class="method navigator-link" hash-for-method="offerRide1Test([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30])">offerRide1Test([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30])</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -153,6 +162,27 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.OfferRideTC2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="offerRide2Test([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30])">
+                  </a> <!-- offerRide2Test([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30]) -->
+                  <span class="method-name">offerRide2Test</span>
+                  <span class="parameters">([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30])</span>
+                  <div class="stack-trace">java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at testcases.OfferRideTC2.offerRide2Test(OfferRideTC2.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -169,10 +199,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="offerRide1Test(Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30)">
-                  </a> <!-- offerRide1Test(Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30) -->
+                  <a name="offerRide1Test([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30])">
+                  </a> <!-- offerRide1Test([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30]) -->
                   <span class="method-name">offerRide1Test</span>
-                  <span class="parameters">(Chennai,Bengaluru,OMR Bypass,23/08/2024,3:30,27/08/2024,5:30)</span>
+                  <span class="parameters">([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -193,18 +223,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="offerRide1Test(Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30)">
-                  </a> <!-- offerRide1Test(Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30) -->
+                  <a name="offerRide1Test([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30])">
+                  </a> <!-- offerRide1Test([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30]) -->
                   <span class="method-name">offerRide1Test</span>
-                  <span class="parameters">(Chennai,Bengaluru,OMR Bypass,23/08/2024,3:30,27/08/2024,5:30)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="offerRide2Test(1320, 23/08/2024, 5:40, 1234, 1220, 2589, 23/08/2024, 8:10, 230, 1112)">
-                  </a> <!-- offerRide2Test(1320, 23/08/2024, 5:40, 1234, 1220, 2589, 23/08/2024, 8:10, 230, 1112) -->
-                  <span class="method-name">offerRide2Test</span>
-                  <span class="parameters">(1320,23/08/2024,5:40,1234,1220,2589,23/08/2024,8:10,230,1112)</span>
+                  <span class="parameters">([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -217,10 +239,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="findRideTest(Chennai, Bengaluru, 08/06/2024)">
-                  </a> <!-- findRideTest(Chennai, Bengaluru, 08/06/2024) -->
+                  <a name="findRideTest(Chennai, Bengaluru, 23-08-2024, 20)">
+                  </a> <!-- findRideTest(Chennai, Bengaluru, 23-08-2024, 20) -->
                   <span class="method-name">findRideTest</span>
-                  <span class="parameters">(Chennai,Bengaluru,08/06/2024)</span>
+                  <span class="parameters">(Chennai,Bengaluru,23-08-2024,20)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -258,9 +280,9 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite data-provider-thread-count=&quot;3&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;utility.ReportGenerate&quot;/&gt;
+    &lt;listener class-name=&quot;utility.ExtentReport&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
@@ -309,42 +331,42 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'offerRide2Test')
-data.setCell(0, 2, 'testcases.OfferRideTC2')
-data.setCell(0, 3, 8061);
+data.setCell(0, 1, 'findRideTest')
+data.setCell(0, 2, 'testcases.FindARideTC')
+data.setCell(0, 3, 8158);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'findRideTest')
-data.setCell(1, 2, 'testcases.FindARideTC')
-data.setCell(1, 3, 4710);
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'testcases.LoginTC')
+data.setCell(1, 3, 5881);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'offerRide1Test')
 data.setCell(2, 2, 'testcases.OfferRideTC1')
-data.setCell(2, 3, 4227);
+data.setCell(2, 3, 5118);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginTest')
-data.setCell(3, 2, 'testcases.LoginTC')
-data.setCell(3, 3, 4189);
+data.setCell(3, 1, 'offerRide2Test')
+data.setCell(3, 2, 'testcases.OfferRideTC2')
+data.setCell(3, 3, 5005);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'loginTest')
-data.setCell(4, 2, 'testcases.OfferRideTC2')
-data.setCell(4, 3, 3883);
+data.setCell(4, 2, 'testcases.FindARideTC')
+data.setCell(4, 3, 4174);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'loginTest')
 data.setCell(5, 2, 'testcases.OfferRideTC1')
-data.setCell(5, 3, 3786);
+data.setCell(5, 3, 4007);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'loginTest')
-data.setCell(6, 2, 'testcases.FindARideTC')
-data.setCell(6, 3, 3716);
+data.setCell(6, 2, 'testcases.OfferRideTC2')
+data.setCell(6, 3, 3936);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'offerRide1Test')
 data.setCell(7, 2, 'testcases.OfferRideTC2')
-data.setCell(7, 3, 3700);
+data.setCell(7, 3, 3899);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 36 seconds</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -372,77 +394,79 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.LoginTC</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">openApp</span>
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginTest(niteesh@w3softech.com, w3softech)</span>
-                <span class="method-start">20205 ms</span>
+                <span class="method-start">38662 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">close</span>
-                <span class="method-start">24894 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">45110 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.FindARideTC</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">openApp</span>
-                <span class="method-start">25072 ms</span>
+                <span class="method-name">setUp</span>
+                <span class="method-start">45302 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginTest(niteesh@w3softech.com, w3softech)</span>
-                <span class="method-start">34222 ms</span>
+                <span class="method-start">54398 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">findRideTest(Chennai, Bengaluru, 08/06/2024)</span>
-                <span class="method-start">38342 ms</span>
+                <span class="method-name">findRideTest(Chennai, Bengaluru, 23-08-2024, 20)</span>
+                <span class="method-start">59063 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">close</span>
-                <span class="method-start">43318 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">67547 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.OfferRideTC1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">openApp</span>
-                <span class="method-start">43476 ms</span>
+                <span class="method-name">setUp</span>
+                <span class="method-start">67701 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginTest(niteesh@w3softech.com, w3softech)</span>
-                <span class="method-start">53017 ms</span>
+                <span class="method-start">76442 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">offerRide1Test(Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30)</span>
-                <span class="method-start">58076 ms</span>
+                <span class="method-name">offerRide1Test([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30])</span>
+                <span class="method-start">82227 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">close</span>
-                <span class="method-start">62659 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">87693 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.OfferRideTC2</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">openApp</span>
-                <span class="method-start">62857 ms</span>
+                <span class="method-name">setUp</span>
+                <span class="method-start">87818 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginTest(niteesh@w3softech.com, w3softech)</span>
-                <span class="method-start">72084 ms</span>
+                <span class="method-start">96934 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">offerRide1Test(Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30)</span>
-                <span class="method-start">76430 ms</span>
+                <span class="method-name">offerRide1Test([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30])</span>
+                <span class="method-start">101441 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">offerRide2Test(1320, 23/08/2024, 5:40, 1234, 1220, 2589, 23/08/2024, 8:10, 230, 1112)</span>
-                <span class="method-start">80565 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">offerRide2Test([Chennai, Bengaluru, OMR Bypass, 23/08/2024, 3:30, 27/08/2024, 5:30])</span>
+                <span class="method-start">105794 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">close</span>
-                <span class="method-start">88976 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">111246 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

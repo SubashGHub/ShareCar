@@ -1,4 +1,4 @@
-package pom;
+package pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,20 +12,21 @@ public class Loginpage_pom extends Base{
 	}
 
 	@FindBy(id="email")
-	WebElement email;
+	WebElement txtEmail;
 	
 	@FindBy(id="password")
-	WebElement password;
+	WebElement txtPassword;
 	
 	@FindBy(id="sbtLogin")
 	WebElement btnlogin;
 	
-	public void setEmail(String uname) {
-		email.sendKeys(uname);
+	public Loginpage_pom setEmail(String uname) {
+		txtEmail.sendKeys(uname);
+		return this;
 	}
 	
 	public void setPassword(String pwd) {
-		password.sendKeys(pwd);
+		txtPassword.sendKeys(pwd);
 	}
 	
 	public void clickLogin() {

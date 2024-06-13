@@ -1,4 +1,4 @@
-package pom;
+package pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,10 +13,10 @@ public class FindARide_pom extends Base{
 	}
 	
 	@FindBy(id="from_location")
-	WebElement fromlocation;
+	WebElement txtFromlocation;
 	
 	@FindBy(id="to_location")
-	WebElement tolocation;
+	WebElement txtTolocation;
 	
 	@FindBy(id="searchBtn")
 	WebElement btnsearch;
@@ -28,14 +28,14 @@ public class FindARide_pom extends Base{
 	WebElement extendredius;
 	
 	public void setFromLocation(String from) {
-		fromlocation.sendKeys(from);
+		txtFromlocation.sendKeys(from);
 	}
 	
 	public void setToLocation(String to) {
-		tolocation.sendKeys(to);
+		txtTolocation.sendKeys(to);
 	}
 	
-	public void searchRide() {
+	public void clickSearchRide() {
 
 		wt.until(ExpectedConditions.elementToBeClickable(btnsearch));
 		btnsearch.click();
@@ -45,10 +45,16 @@ public class FindARide_pom extends Base{
 		journeydate.sendKeys(date);
 	}
 	
-	public void selectExtendRadius() {
+	public void selectExtendRadius(String radius) {
 		js.executeScript("arguments[0].click();",extendredius);
 		Select sc = new Select(extendredius);
-		sc.selectByVisibleText("Radius 20");
+		if(radius.equals("10")) {
+		sc.selectByVisibleText("Radius 10");
+		}if(radius.equals("20")) {
+			sc.selectByVisibleText("Radius 20");
+		}if(radius.equals("30")) {
+			sc.selectByVisibleText("Radius 30");
+		}
 	}
 
 }

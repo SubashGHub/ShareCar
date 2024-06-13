@@ -1,5 +1,6 @@
 package utility;
 
+import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -14,11 +15,11 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import testcases.BaseClass;
 
-public class ReportGenerate implements ITestListener {
+public class ExtentReport implements ITestListener, ISuiteListener {
 	
 	ExtentSparkReporter reporter;
 	ExtentReports reports;
-	ExtentTest test;
+	public static ExtentTest test;
 	
 	@Override
 	public void onStart(ITestContext context) {
@@ -26,19 +27,25 @@ public class ReportGenerate implements ITestListener {
 		
 		reporter.config().setDocumentTitle("Share car Project Report");
 		reporter.config().setReportName("Automation Script");
-		reporter.config().setTheme(Theme.STANDARD);
+		reporter.config().setTheme(Theme.DARK);
 		
 		reports = new ExtentReports();
 		reports.attachReporter(reporter);
 		
 		reports.setSystemInfo("OS", "Windows 11");
 		reports.setSystemInfo("User", "Subash");
-		
 	}
 	
+	
+	@Override
+	public void onTestStart(ITestResult result) {
+		test = reports.createTest(result.getName());
+	}
+
+	
+
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		test = reports.createTest(result.getName());
 		test.log(Status.PASS,MarkupHelper.createLabel(result.getName(),ExtentColor.GREEN));
 		String imgpath = new BaseClass().captureScreen(result.getName());
 		test.addScreenCaptureFromPath(imgpath, result.getName());
@@ -46,14 +53,13 @@ public class ReportGenerate implements ITestListener {
 	
 	@Override
 	public void onTestFailure(ITestResult result) {
-		test = reports.createTest(result.getName());
+		
 		test.log(Status.FAIL, MarkupHelper.createLabel(result.getName(), ExtentColor.RED));
 		String imgpath = new BaseClass().captureScreen(result.getName());
 		test.addScreenCaptureFromPath(imgpath, result.getName());
 	}
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		test = reports.createTest(result.getName());
 		test.log(Status.SKIP, MarkupHelper.createLabel(result.getName(), ExtentColor.ORANGE));
 	}
 	
